@@ -17,6 +17,7 @@
   top: -1rem;
   right: -3rem;
   position: absolute;
+  transform: rotate(30deg);
 }
 .top .iconfont {
   color: #f46267;
@@ -191,7 +192,7 @@
 .post-wrap pre,
 .post-entry code,
 .post-wrap code {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 }
 .post-entry code:not(.hljs),
@@ -207,7 +208,7 @@
 .post-wrap p,
 .post-entry table,
 .post-wrap table {
-  font-size: 0.875rem;
+  font-size: 0.938rem;
   line-height: 1.5rem;
 }
 .post-entry p,

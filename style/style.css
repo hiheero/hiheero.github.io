@@ -177,8 +177,8 @@ a {
   background: #bbdefb;
 }
 @font-face {
-  font-family: 'Varela';
-  src: url("../font/Varela.woff2") format('woff2');
+  font-family: 'OpenSans';
+  src: url("../font/OpenSans-Regular.ttf") format('ttf');
 }
 .post-entry {
   width: 100%;
@@ -437,7 +437,7 @@ a {
 .post-wrap pre,
 .post-entry code,
 .post-wrap code {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 }
 .post-entry code:not(.hljs),
@@ -453,7 +453,7 @@ a {
 .post-wrap p,
 .post-entry table,
 .post-wrap table {
-  font-size: 0.875rem;
+  font-size: 0.938rem;
   line-height: 1.5rem;
 }
 .post-entry p,
