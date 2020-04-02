@@ -1,170 +1,84 @@
 /*
 
-Night Owl for highlight.js (c) Carl Baxter <carl@cbax.tech>
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
 
-An adaptation of Sarah Drasner's Night Owl VS Code Theme 
-https://github.com/sdras/night-owl-vscode-theme 
-
-Copyright (c) 2018 Sarah Drasner
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
 
 */
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #011627;
-  color: #d6deeb;
+  color: #abb2bf;
+  background: #282c34;
 }
-/* General Purpose */
-.hljs-keyword {
-  color: #c792ea;
+.hljs-comment,
+.hljs-quote {
+  color: #5c6370;
   font-style: italic;
 }
-.hljs-built_in {
-  color: #addb67;
-  font-style: italic;
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: #c678dd;
 }
-.hljs-type {
-  color: #82aaff;
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: #e06c75;
 }
 .hljs-literal {
-  color: #ff5874;
+  color: #56b6c2;
 }
-.hljs-number {
-  color: #f78c6c;
-}
-.hljs-regexp {
-  color: #5ca7e4;
-}
-.hljs-string {
-  color: #ecc48d;
-}
-.hljs-subst {
-  color: #d3423e;
-}
-.hljs-symbol {
-  color: #82aaff;
-}
-.hljs-class {
-  color: #ffcb8b;
-}
-.hljs-function {
-  color: #82aaff;
-}
-.hljs-title {
-  color: #dcdcaa;
-  font-style: italic;
-}
-.hljs-params {
-  color: #7fdbca;
-}
-/* Meta */
-.hljs-comment {
-  color: #637777;
-  font-style: italic;
-}
-.hljs-doctag {
-  color: #7fdbca;
-}
-.hljs-meta {
-  color: #82aaff;
-}
-.hljs-meta-keyword {
-  color: #82aaff;
-}
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
 .hljs-meta-string {
-  color: #ecc48d;
+  color: #98c379;
 }
-/* Tags, attributes, config */
-.hljs-section {
-  color: #82b1ff;
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: #e6c07b;
 }
-.hljs-tag,
-.hljs-name,
-.hljs-builtin-name {
-  color: #7fdbca;
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: #d19a66;
 }
-.hljs-attr {
-  color: #7fdbca;
-}
-.hljs-attribute {
-  color: #80cbc4;
-}
-.hljs-variable {
-  color: #addb67;
-}
-/* Markup */
-.hljs-bullet {
-  color: #d9f5dd;
-}
-.hljs-code {
-  color: #80cbc4;
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: #61aeee;
 }
 .hljs-emphasis {
-  color: #c792ea;
   font-style: italic;
 }
 .hljs-strong {
-  color: #addb67;
   font-weight: bold;
 }
-.hljs-formula {
-  color: #c792ea;
-}
 .hljs-link {
-  color: #ff869a;
-}
-.hljs-quote {
-  color: #697098;
-  font-style: italic;
-}
-/* CSS */
-.hljs-selector-tag {
-  color: #ff6363;
-}
-.hljs-selector-id {
-  color: #fad430;
-}
-.hljs-selector-class {
-  color: #addb67;
-  font-style: italic;
-}
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-  color: #c792ea;
-  font-style: italic;
-}
-/* Templates */
-.hljs-template-tag {
-  color: #c792ea;
-}
-.hljs-template-variable {
-  color: #addb67;
-}
-/* diff */
-.hljs-addition {
-  color: #addb67;
-  font-style: italic;
-}
-.hljs-deletion {
-  color: rgba(239,83,80,0.565);
-  font-style: italic;
+  text-decoration: underline;
 }
