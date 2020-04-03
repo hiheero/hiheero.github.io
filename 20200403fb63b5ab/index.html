@@ -16,7 +16,7 @@
     <meta name="description" content="Heero|徐伦|博客|个人|heero" />
     
     <title>
-      技术分享 | Hexo创建文章后自动打开 - Heero!
+      技术分享 | 小白零基础建站教程 - Heero!
     </title>
     <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -26,6 +26,11 @@
   <meta name="generator" content="Hexo 4.2.0"></head>
   <body>
     <canvas id='pagemap'></canvas>
+    
+    <div id="post-toc" class="animated hiddenToc hide">
+      <span class="title">Toc</span>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#建站前准备"><span class="toc-text">建站前准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#服务器选购"><span class="toc-text">服务器选购</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#连接服务器"><span class="toc-text">连接服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装服务器管理面板"><span class="toc-text">安装服务器管理面板</span></a></li></ol></li></ol>
+    </div>
     
     <div id="fixed-menu-wrap">
       <span class="iconfont icon-sousuo search-box menu-reset"></span>
@@ -158,15 +163,15 @@
         <article class="post-entry">
     <div class="header">
       
-      <div class="title">技术分享 | Hexo创建文章后自动打开</div>
+      <div class="title">技术分享 | 小白零基础建站教程</div>
       <div class="meta">
         <span class="item">
           <span class="iconfont icon-time-circle"></span>
-          <span>2020/04/01</span>
+          <span>2020/04/03</span>
         </span>
 
         
-          <span class="item leancloud-visitors" id="/2020040113798482/" data-flag-title="技术分享 | Hexo创建文章后自动打开">
+          <span class="item leancloud-visitors" id="/20200403fb63b5ab/" data-flag-title="技术分享 | 小白零基础建站教程">
             <span class="iconfont icon-eye1"></span>
             <span class="leancloud-visitors-count"></span>
           </span>
@@ -191,10 +196,6 @@
             <span>
                 
                   
-                    <a href="/tags/Hexo">Hexo</a>
-                  
-                
-                  
                     <a href="/tags/技术分享">技术分享</a>
                   
                 
@@ -205,7 +206,49 @@
       <div>
       </div>
     </div>
-    <html><head></head><body><p>—- 留坑待更 —-</p>
+    <html><head></head><body><a id="more"></a>
+
+<h2 id="建站前准备">建站前准备<a class="post-anchor" href="#建站前准备"></a></h2><ul>
+<li>一台 Linux 服务器</li>
+<li>一个域名</li>
+<li>远程连接软件</li>
+<li>网站源码</li>
+</ul>
+<h2 id="服务器选购">服务器选购<a class="post-anchor" href="#服务器选购"></a></h2><p>对于小白的我们来说，对服务器所知甚少，各种参数也是搞不明白，唯一关心的可能只有价格。国内知名的云服务器很多，比如腾讯云，阿里云。每一家的方案都不同，这里已腾讯云为例。</p>
+<p>百度搜索 <code>腾讯 云+校园</code> 网址 <a href="https://url.cn/5hR1Jr8" target="_blank" rel="noopener">腾讯 云+校园</a></p>
+<p><a href="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403231929175.png" data-caption="image-20200403231929175" data-fancybox="images"><img src="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403231929175.png" alt="image-20200403231929175"></a></p>
+<p>10 元/月，可以续费三次，按需购买即可。</p>
+<h2 id="连接服务器">连接服务器<a class="post-anchor" href="#连接服务器"></a></h2><p>网页右上角点击 <code>控制台</code> 进入服务器管理页面。</p>
+<p><a href="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403232256525.png" data-caption="image-20200403232256525" data-fancybox="images"><img src="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403232256525.png" alt="image-20200403232256525"></a></p>
+<p>可以看到我们的服务器了。</p>
+<p>忘记密码的话可以自行修改。</p>
+<p><a href="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403232408751.png" data-caption="image-20200403232408751" data-fancybox="images"><img src="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403232408751.png" alt="image-20200403232408751"></a></p>
+<p>Win 10 的 CMD 自带 SSH 连接功能，我们打开 CMD</p>
+<p>输入</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">SSH root@你的公网IP地址<br></code></pre></td></tr></tbody></table></figure>
+
+<p><a href="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403232705475.png" data-caption="image-20200403232705475" data-fancybox="images"><img src="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403232705475.png" alt="image-20200403232705475"></a></p>
+<p>会要求你输入密码，输入的密码是看不见的。</p>
+<p>连接成功后会显示</p>
+<p><a href="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403232818307.png" data-caption="image-20200403232818307" data-fancybox="images"><img src="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403232818307.png" alt="image-20200403232818307"></a></p>
+<h3 id="安装服务器管理面板">安装服务器管理面板<a class="post-anchor" href="#安装服务器管理面板"></a></h3><p>既然是小白建站，我们没有什么关于服务器的知识，也不知道一个网站需要哪些组件。但是别着急，有人已经写好的非常方便的管理面板。</p>
+<p>百度搜索 <code>宝塔LINUX</code> <a href="https://www.bt.cn/bbs/thread-19376-1-1.html" target="_blank" rel="noopener">宝塔 LINUX</a></p>
+<p><a href="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403233216801.png" data-caption="image-20200403233216801" data-fancybox="images"><img src="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403233216801.png" alt="image-20200403233216801"></a></p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh<br></code></pre></td></tr></tbody></table></figure>
+
+<p>复制这条命令，粘贴到我们的连接窗口中。</p>
+<p>按下回车后会自动安装，需要输入yes的地方就输入yes,其他时候回车就好。</p>
+<p><a href="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403233522998.png" data-caption="image-20200403233522998" data-fancybox="images"><img src="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403233522998.png" alt="image-20200403233522998"></a></p>
+<p>安装成功后会显示面板的地址</p>
+<p><a href="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403233839660.png" data-caption="image-20200403233839660" data-fancybox="images"><img src="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403233839660.png" alt="image-20200403233839660"></a></p>
+<p>这里很重要</p>
+<p>我们输入地址</p>
+<p><a href="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403234026647.png" data-caption="image-20200403234026647" data-fancybox="images"><img src="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403234026647.png" alt="image-20200403234026647"></a></p>
+<p>输入账号密码即可</p>
+<p><a href="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403234132455.png" data-caption="image-20200403234132455" data-fancybox="images"><img src="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403234132455.png" alt="image-20200403234132455"></a></p>
+<p>进入之后会提示我们安装服务器套件，这里我们选择 LNMP。后台会自动进行安装，大概5-10分钟。</p>
+<p>趁这段时间我们可以修改一下面板入口和账号密码</p>
+<p><a href="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403234337707.png" data-caption="image-20200403234337707" data-fancybox="images"><img src="C:%5CUsers%5Cjojo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200403234337707.png" alt="image-20200403234337707"></a></p>
 </body></html>
 
   
@@ -232,12 +275,10 @@
   <div class="post-guide">
     <div class="item left">
         
-          <a href="/20200401e99c3b89/">技术分享 | Hexo-abbrlink生成唯一永久文章链接</a>
-        
     </div>
     <div class="item right">
         
-          <a href="/202004018f3850c0/">杂谈 | 我与游戏王的爱恨纠葛史</a>
+          <a href="/20200403b91266fe/">游戏杂谈 | DQ11S: 追忆逝去之时</a>
         
     </div>
   </div>
@@ -249,7 +290,7 @@
       本文作者：<a href="https://hiheero.gitee.io">Heero!</a>
     </div>
     <div class="link">
-      永久链接：<a href="https://hiheero.gitee.io/2020040113798482/">https://hiheero.gitee.io/2020040113798482/</a>
+      永久链接：<a href="https://hiheero.gitee.io/20200403fb63b5ab/">https://hiheero.gitee.io/20200403fb63b5ab/</a>
     </div>
     <div class="declare">
       版权声明：本文首发于<a href="https://hiheero.gitee.io">Heero!</a>的博客，转载请注明出处！
