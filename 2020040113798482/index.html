@@ -205,7 +205,14 @@
       <div>
       </div>
     </div>
-    <html><head></head><body><p>—- 留坑待更 —-</p>
+    <html><head></head><body><p>每次在 cmd 里 hexo new 了一个新markdown文件后，都要手动去博客文件目录里手动打开来，有点麻烦，而且文件数量少的时候还好，数量一多，找起来都很麻烦。于是就想着有什么能自动新建后自动打开的方法，查了一下资料，方法也比较简单。</p>
+<p>每次在 cmd 里 hexo new 了一个 markdown 文件后，都要去博客文件目录里手动打开，有点麻烦，而且文件数量少的时候还好，数量一多，找起来都很不方便。于是就想着有什么能自动新建后自动打开的方法，查了一下资料，方法也比较简单。</p>
+<p>1.首先安装 <code>shelljs</code> 模块，实现自动部署后加载 JS 脚本。</p>
+<p><code>npm install shelljs --save</code></p>
+<p>2.在 hexo 根目录的 <code>scripts 文件夹</code>（没有就手动创建）下创建 <code>auto_open.js</code> 文件，键入以下代码</p>
+<figure class="highlight javascript"><table><tbody><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> exec = <span class="hljs-built_in">require</span>(<span class="hljs-string">'child_process'</span>).exec;<br> <br>hexo.on(<span class="hljs-string">'new'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>)</span>{<br>    exec(<span class="hljs-string">'start "C:\Program Files\Typora\Typora.exe"'</span> + data.path);<br>});<br></code></pre></td></tr></tbody></table></figure>
+
+<p>其中 <code>C:\Program Files\Typora\Typora.exe</code> 改成你自己的markdown软件的路径。Windows 下打开的命令是 <code>start</code>，OS X 改成 <code>open</code> 即可</p>
 </body></html>
 
   

@@ -27,6 +27,11 @@
   <body>
     <canvas id='pagemap'></canvas>
     
+    <div id="post-toc" class="animated hiddenToc hide">
+      <span class="title">Toc</span>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装插件"><span class="toc-text">安装插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-text">配置</span></a></li></ol>
+    </div>
+    
     <div id="fixed-menu-wrap">
       <span class="iconfont icon-sousuo search-box menu-reset"></span>
       <span class="icon-toc menu-reset">Toc</span>
@@ -205,7 +210,17 @@
       <div>
       </div>
     </div>
-    <html><head></head><body><p>—- 留坑待更 —-</p>
+    <html><head></head><body><p>hexo 的默认生成 url 规则是 <code>:year/:month/:day/:title</code>，按照年月日和标题来生成。但是如果标题是中文的，会出现很长的转义，不利于链接分享。</p>
+<p>解决方案：使用 <code>Hexo-abbrlink</code> 插件</p>
+<h2 id="安装插件">安装插件<a class="post-anchor" href="#安装插件"></a></h2><p><code>npm install hexo-abbrlink --save</code></p>
+<p>执行此命令可能会不成功，提示你缺少相应的依赖<br> 比如<code>babel-eslint</code>、<code>mini-css-extract-plugin</code>、<code>webpack-cli</code>…<br> 使用npm命令安装即可，比如<code>npm install eslint@4.x babel-eslint@8 --save-dev</code></p>
+<h2 id="配置">配置<a class="post-anchor" href="#配置"></a></h2><p>修改根目录站点配置文件<code>config.yml</code>，改为：</p>
+<figure class="highlight"><table><tbody><tr><td class="code"><pre><code class="hljs js">permalink: :posts/abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink<br>abbrlink:<br>    alg: crc32   #算法： crc16(default) and crc32<br>    rep: hex     #进制： dec(default) and hex<br></code></pre></td></tr></tbody></table></figure>
+
+<p>生成的链接将会是这样的(官方样例)：</p>
+<figure class="highlight js"><table><tbody><tr><td class="code"><pre><code class="hljs js">crc16 & hex<br>https:<span class="hljs-comment">//post.zz173.com/posts/66c8.html</span><br><br>crc16 & dec<br>https:<span class="hljs-comment">//post.zz173.com/posts/65535.html</span><br>crc32 & hex<br>https:<span class="hljs-comment">//post.zz173.com/posts/8ddf18fb.html</span><br><br>crc32 & dec<br>https:<span class="hljs-comment">//post.zz173.com/posts/1690090958.html</span><br></code></pre></td></tr></tbody></table></figure>
+
+<p>生成完后，原<code>md</code>文件的 Front-matter 内会增加<code>abbrlink</code> 字段，值为生成的ID 。这个字段确保了在我们修改了 Front-matter 内的博客标题 title 或创建日期 date 字段之后而不会改变链接地址。</p>
 </body></html>
 
   
