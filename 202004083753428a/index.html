@@ -17,7 +17,7 @@
     <meta name="description" content="Heero|徐伦|博客|个人|heero" />
     
     <title>
-      技术分享 | 安卓视图绑定工具 ViewBinding初探 - Heero!
+      技术分享 | 安卓视图绑定工具 ViewBinding - Heero!
     </title>
     <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -164,7 +164,7 @@
         <article class="post-entry">
     <div class="header">
       
-      <div class="title">技术分享 | 安卓视图绑定工具 ViewBinding初探</div>
+      <div class="title">技术分享 | 安卓视图绑定工具 ViewBinding</div>
       <div class="meta">
         <span class="item">
           <span class="iconfont icon-time-circle"></span>
@@ -172,7 +172,7 @@
         </span>
 
         
-          <span class="item leancloud-visitors" id="/202004083753428a/" data-flag-title="技术分享 | 安卓视图绑定工具 ViewBinding初探">
+          <span class="item leancloud-visitors" id="/202004083753428a/" data-flag-title="技术分享 | 安卓视图绑定工具 ViewBinding">
             <span class="iconfont icon-eye1"></span>
             <span class="leancloud-visitors-count"></span>
           </span>
@@ -211,7 +211,10 @@
       <div>
       </div>
     </div>
-    <html><head></head><body><h2 id="前言">前言<a class="post-anchor" href="#前言"></a></h2><p>在安卓开发过程中我们总是需要获取 XML 布局中的 View ID，以此对 UI 组件进行操控。早期我们只能使用 findViewById 这个 API，并且代码比较繁琐。2013 年左右安卓大神 Jake Wharton 开源了框架 Butter Knife，可以使用 Bind(“viewId”) 的方式来获取 View ID。这两年谷歌支持 Kotlin 为安卓开发主流语言，我们开始使用 Android Kotlin extensions，在文件中导入布局文件就可以使用 View ID，不用其他额外操作，非常方便。</p>
+    <html><head></head><body><p>从此告别 findViewById 和 Butter Knife。</p>
+<a id="more"></a>
+
+<h2 id="前言">前言<a class="post-anchor" href="#前言"></a></h2><p>在安卓开发过程中我们总是需要获取 XML 布局中的 View ID，以此对 UI 组件进行操控。早期我们只能使用 findViewById 这个 API，并且代码比较繁琐。2013 年左右安卓大神 Jake Wharton 开源了框架 Butter Knife，可以使用 Bind(“viewId”) 的方式来获取 View ID。这两年谷歌支持 Kotlin 为安卓开发主流语言，我们开始使用 Android Kotlin extensions，在文件中导入布局文件就可以使用 View ID，不用其他额外操作，非常方便。</p>
 <p>目前，谷歌在 Android Studio 3.6 Canary 11 及更高版本中加入了新的视图绑定工具 ViewBinding。所以，为了使用 ViewBinding，必须将 Android Studio 升级至 3.6 版本或以上。</p>
 <h2 id="ViewBinding的使用">ViewBinding的使用<a class="post-anchor" href="#ViewBinding的使用"></a></h2><p>ViewBinding可以按照模块来启用。如果要在某个模块中启用ViewBinding，则在该模块的build.gradle中添加如下配置即可：</p>
 <figure class="highlight gradle"><table><tbody><tr><td class="code"><pre><code class="hljs gradle">android {<br>    ...<br>    viewBinding {<br>        enable = <span class="hljs-keyword">true</span><br>    }<br>}<br></code></pre></td></tr></tbody></table></figure>
