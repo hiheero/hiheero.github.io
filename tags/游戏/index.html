@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <script>
+    <script>
+  ;(function(w, d, s, l, i) {
+    w[l] = w[l] || []
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : ''
+    j.async = true
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+    f.parentNode.insertBefore(j, f)
+  })(window, document, 'script', 'dataLayer', 'UA-163347125-1')
+</script>  <script>
   var _hmt = _hmt || [];
   (function() {
     var hm = document.createElement("script");
@@ -10,7 +21,7 @@
     s.parentNode.insertBefore(hm, s);
   })();
   </script>
-   
+   <meta name="google-site-verification" content="UA-163347125-1" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="keywords" content="Heero,徐伦,博客,个人,heero" />
@@ -230,7 +241,12 @@
       </div>
     </div>
   </body>
-  
+  <noscript><iframe
+                  src="https://www.googletagmanager.com/ns.html?id=<%= theme.gtm_id %>"
+                  height="0"
+                  width="0"
+                  style="display:none;visibility:hidden">
+                </iframe></noscript>
 </html>
 <script type="text/javascript">
                   window.HUHU_CONFIG = JSON.parse("{\"share\":[\"weibo\",\"weixin\",\"qqkongjian\",\"QQ\",\"douban\",\"facebook\",\"twitter\",\"google\"],\"valine\":{\"API_ID\":\"wwK7Mto0XmVeM0J0T8DiqvUY-gzGzoHsz\",\"API_KEY\":\"cNsnNwYnyVJgHYDaCYON9Rpc\"},\"service_worker\":{\"open\":false},\"baidu_tongji\":{\"site_from\":\"2020/3/30\",\"site_id\":\"14931040\",\"access_token\":\"121.c10bdf1f86798537ef1fb8c0e8d85013.YgXrjb4OwT71GeEuBMvwKQy0C1jJlsrfK00aFl-.CCstkQ\"}}")
