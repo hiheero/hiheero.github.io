@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hiheero.gitee.io/"/>
-  <updated>2020-04-13T11:23:30.208Z</updated>
+  <updated>2020-04-16T06:53:44.940Z</updated>
   <id>https://hiheero.gitee.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>技术分享 | 如何选择开源许可证？</title>
+    <link href="https://hiheero.gitee.io/20200416c873fa/"/>
+    <id>https://hiheero.gitee.io/20200416c873fa/</id>
+    <published>2020-04-16T06:50:22.000Z</published>
+    <updated>2020-04-16T06:53:44.940Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;世界上的开源许可证，大概有上百种&lt;br&gt;很少有人搞得清楚它们的区别&lt;br&gt;即使在最流行的六种—-GPL、BSD、MIT、Mozilla、Apache和LGPL—-之中做选择，也很复杂&lt;br&gt;一张图就能厘清这流行的六种许可证的
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://hiheero.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="技术分享" scheme="https://hiheero.gitee.io/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>技术分享 | Dart 判断数据类型</title>
