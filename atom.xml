@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hiheero.gitee.io/"/>
-  <updated>2020-04-16T06:53:44.940Z</updated>
+  <updated>2020-06-09T14:13:26.612Z</updated>
   <id>https://hiheero.gitee.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>随笔 | 2020.6.9</title>
+    <link href="https://hiheero.gitee.io/20200609e24b508c/"/>
+    <id>https://hiheero.gitee.io/20200609e24b508c/</id>
+    <published>2020-06-09T14:09:41.000Z</published>
+    <updated>2020-06-09T14:13:26.612Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;男主遮挡半边脸，女主投入且享受。背景一老翁，周围招贴繁复，都市喧嚣，社畜枷锁，二人视若无睹，享受美妙时刻，撷取刹那之姿，铸成永恒雕塑。&lt;/p&gt;
+&lt;p&gt;想起《失乐园》最后男女主死去时的样子。&lt;/p&gt;
+&lt;/body&gt;&lt;/html
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://hiheero.gitee.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="https://hiheero.gitee.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
     <title>技术分享 | 如何选择开源许可证？</title>
     <link href="https://hiheero.gitee.io/20200416c873fa/"/>
     <id>https://hiheero.gitee.io/20200416c873fa/</id>
     <published>2020-04-16T06:50:22.000Z</published>
-    <updated>2020-04-16T06:53:44.940Z</updated>
+    <updated>2020-04-16T06:54:02.021Z</updated>
     
     <summary type="html">
     
